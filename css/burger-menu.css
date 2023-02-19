@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT',
+    Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a, button {
+    cursor: pointer;
+    text-decoration: none;
+}
+body{
+    background: #1d7cc0;
+}
+
+nav {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    width: 250px;
+}
+
+.navigation {
+    position: fixed;
+    right: -500px;
+    width: 400px;
+    height: 100%;
+    background-color: #000;
+    transition: .7s;
+}
+
+.navigation ul li {
+    color: #fff;
+    text-align: right;
+    text-transform: uppercase;
+    list-style-type: none;
+    font-size: 20px;
+    padding: 20px 20px;
+    border-bottom: 1pt solid #5515c4;
+    box-shadow: 5px 5px 5px #8060b7;
+}
+
+.hamburger, .bar {
+    position: fixed;
+}
+
+.hamburger {
+    display: block;
+    top: 5%;
+    left: 95%;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+    border: 0;
+    background: 0 0;
+}
+
+.bar {
+    top: 3px;
+    background: #000;
+    width: 120%;
+    height: 4px;
+    transition: all .3s ease-in;
+}
+
+
+#bar2 {
+    top: 11px;
+}
+
+#bar3 {
+    top: 19px;
+}
+
+.navigation.active {
+    right: 0;
+}
+
+.hamburger.open #bar1 {
+    background-color: #5515c4;
+    transform: rotate(45deg) translate(6px, 5px);
+}
+
+.hamburger.open #bar2 {
+    background-color: transparent;
+}
+.hamburger.open #bar3 {
+    background-color: #5515c4;
+    transform: rotate(-45deg) translate(6px, -5px);
+}
+
+
+
+
+
+
+
+
+

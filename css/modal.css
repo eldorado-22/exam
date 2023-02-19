@@ -1,0 +1,100 @@
+/*/////////// MODAL-WINDOW //////////*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.button{
+    font-family:  sans-serif;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.button a {
+    font-family: sans-serif;
+    background-color: orange;
+    padding: 20px 50px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.pop_up{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 2;
+}
+
+.pop_up.active {
+    display: block;
+}
+
+.pop_up_container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.pop_up_body{
+    margin: auto;
+    width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 15px 120px 15px;
+    position: relative;
+}
+.pop_up_body p{
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 40px;
+}
+
+.pop_up_body input{
+    display: block;
+    margin: 25px auto 0px auto;
+    width: 330px;
+    padding: 17px 20px;
+    background-color: #E5E5E5;
+    border-radius: 10px;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #89909F;
+}
+.pop_up_body input:focus{
+    outline: none;
+}
+.pop_up_body button {
+    cursor: pointer;
+    display: block;
+    padding: 20px;
+    width: 70%;
+    margin: 60px auto 0 auto;
+    font-family: Montserrat, serif;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 10px;
+    background-color: orange;
+}
+.pop_up_close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 21px;
+    cursor: pointer;
+}

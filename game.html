@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Burger Menu Square Game</title>
+    <link rel="icon" href="images/burger.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/burger-menu.css">
+</head>
+<body style="background:#5113d3;">
+
+
+<div class="navigation">
+  <button class="hamburger" onclick="show()">
+    <div id="bar1" class="bar"></div>
+    <div id="bar2" class="bar"></div>
+    <div id="bar3" class="bar"></div>
+  </button>
+
+  <nav>
+    <ul>
+      <li><a href="login.html">Home</a></li>
+      <li><a href="police-taxi.html">Police  and  Taxi</a></li>
+      <li><a href="localstorage.html">Local Storage</a></li>
+      <li><a href="modal.html">Modal Window</a></li>
+    </ul>
+  </nav>
+</div>
+
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    canvas {
+        display: block;
+    }
+</style>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<canvas id="game" width="640" height="400"></canvas>
+<script src="./js/game.js"></script>
+<script src="./js/burger-menu.js"></script>
+</body>
+</html>
+
